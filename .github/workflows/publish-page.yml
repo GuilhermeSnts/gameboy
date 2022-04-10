@@ -8,7 +8,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm install
-      - run: npm run deploy
-      - env:
+      - name: install dependencies 
+        run: npm install
+      - name: deploy
+        run: npm run deploy
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
