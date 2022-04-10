@@ -12,7 +12,9 @@ export const Frame = styled("main", {
     0 8px 16px #aaaaaa,
     inset 6px 0 1px rgba(0, 0, 0, 0.1),
     inset -6px 0 1px rgba(255, 255, 255, 0.4),
-    inset 0px 4px 1px rgba(255, 255, 255, 0.4)`,
+    inset 0px 4px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -6px 2px rgba(0, 0, 0, 0.1)
+    `,
   variants: {
     color: {
       offWhite: {
