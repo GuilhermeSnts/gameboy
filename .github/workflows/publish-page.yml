@@ -8,8 +8,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/GuilhermeSnts/gameboy.git | npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
-      - env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm install
       - run: npm run deploy
+      - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
