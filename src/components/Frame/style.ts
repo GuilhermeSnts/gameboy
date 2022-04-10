@@ -25,8 +25,8 @@ export const Frame = styled("main", {
   },
   "&::after": {
     content: " ",
-    width: "150px",
-    height: "90px",
+    width: "140px",
+    height: "95px",
     zIndex: "2",
     position: "absolute",
     bottom: "0",

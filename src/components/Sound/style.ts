@@ -14,7 +14,7 @@ export const Wrapper = styled("div", {
 });
 
 export const AudioHole = styled("div", {
-  width: "8px",
+  width: "10px",
   height: "100%",
   borderRadius: "6px",
   position: 'relative',
