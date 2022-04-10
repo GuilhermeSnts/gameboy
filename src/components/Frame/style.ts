@@ -7,6 +7,7 @@ export const Frame = styled("main", {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  justifyContent: 'space-between',
   borderRadius: "16px 16px 72px 16px",
   boxShadow: `0 4px 8px #aaaaaa,
     0 8px 16px #aaaaaa,
@@ -32,6 +33,6 @@ export const Frame = styled("main", {
     right: "0",
     borderRadius: "0 0 72px 0",
     clipPath: "polygon(100% 0, 0 100%, 100% 100%)",
-    background: "linear-gradient(135deg, rgba(0,0,0,0.1), transparent)",
+    background: "linear-gradient(135deg, rgba(0,0,0,0.12), transparent)",
   },
 });

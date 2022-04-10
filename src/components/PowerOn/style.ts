@@ -54,7 +54,7 @@ export const PowerPill = styled("div", {
   width: "80px",
   height: "16px",
   padding: "2px",
-  cursor: 'pointer',
+  cursor: "pointer",
   borderRadius: "10px",
   position: "relative",
   boxShadow: `inset 0 1px 1px rgba(0,0,0,0.2),
@@ -83,7 +83,13 @@ export const PowerPill = styled("div", {
     height: "7px",
     top: "-6px",
     left: "14px",
-    backgroundColor: "#eeeeee",
+    variants: {
+      color: {
+        offWhite: {
+          backgroundColor: "#eeeeee",
+        },
+      },
+    },
     boxShadow: `inset 1px 0 1px rgba(0,0,0,0.2),
       inset -1px 0 1px rgba(0,0,0,0.2)`,
   },
@@ -94,7 +100,13 @@ export const PowerPill = styled("div", {
     height: "7px",
     top: "-6px",
     left: "24px",
-    backgroundColor: "#eeeeee",
+    variants: {
+      color: {
+        offWhite: {
+          backgroundColor: "#eeeeee",
+        },
+      },
+    },
     boxShadow: `inset 1px 0 1px rgba(0,0,0,0.2),
       inset -1px 0 1px rgba(0,0,0,0.2)`,
   },

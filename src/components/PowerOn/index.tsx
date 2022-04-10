@@ -1,15 +1,15 @@
 import { Wrapper, Separator, Container, PowerPill } from "./style";
 import React, { FunctionComponent } from "react";
+import { BaseComponentProps } from "../../types";
 
-interface Props {
-  onClick?: () => void;
-}
-
-const PowerOn: FunctionComponent<Props> = ({ onClick }) => {
+const PowerOn: FunctionComponent<BaseComponentProps> = ({
+  onClick,
+  variant,
+}) => {
   return (
-    <Wrapper color="offWhite">
+    <Wrapper color={variant}>
       <Container>
-        <PowerPill color="offWhite" onClick={onClick}>
+        <PowerPill color={variant} onClick={onClick}>
           <svg width="14" height="14" viewBox="0 0 14 14">
             <path d="M14 0 L0 7 L14 14 Z" />
           </svg>
