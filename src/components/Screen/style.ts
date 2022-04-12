@@ -69,3 +69,52 @@ export const Stripe = styled("div", {
     },
   },
 });
+
+export const ScreenMainContent = styled("div", {
+  display: 'flex',
+  position: 'relative',
+  justifyContent: 'center',
+  alignItems: 'center',
+});
+export const BatteryAllert = styled("div", {
+  position: "absolute",
+  textTransform: "uppercase",
+  fontFamily: "sans-serif",
+  fontSize: "8px",
+  left: '-1px',
+  top: '40px'
+});
+export const BatteryLED = styled("div", {
+  width: "9px",
+  height: "9px",
+  borderRadius: "10px",
+  margin: "10px 8px",
+  variants: {
+    status: {
+      on: {
+        backgroundColor: "#EA361D",
+        boxShadow: `0 0 4px rgb(232, 127, 113, 0.8),
+          0 0 2px rgb(255, 187, 178, 0.8),
+          inset 0 0 1px rgb(255, 187, 178, 0.4)
+        `,
+      },
+      off: {
+        backgroundColor: "#3d0909",
+        boxShadow: `0 0 1px rgb(0, 0, 0, 0.4),
+          inset 0 0 2px rgb(0, 0, 0, 0.4)
+        `,
+      },
+    },
+  },
+});
+export const Canvas = styled("div", {
+  height: "140px",
+  marginTop: "4px",
+  width: "200px",
+  backgroundColor: "#9CA04C",
+  boxShadow: `inset 0px 2px 4px rgba(0,0,0,0.4),
+    inset 1px 1px 4px rgba(0,0,0,0.4),
+    inset -1px 1px 4px rgba(0,0,0,0.4),
+    0 0 2px rgba(255,255,255, 0.3)
+  `,
+});
