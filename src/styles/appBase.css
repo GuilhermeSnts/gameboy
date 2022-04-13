@@ -5,4 +5,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'pretendo';
+  src: url('../fonts/pretendo.woff2') format('woff2'),
+    url('../fonts/pretendo.woff') format('woff'),
+    url('../fonts/pretendo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gill sans';
+  src: url('../fonts/gillsans.otf') format('otf')
 }
