@@ -19,3 +19,8 @@ body {
   font-family: 'Gill sans';
   src: url('../fonts/gillsans.otf') format('otf')
 }
+@font-face {
+  font-family: 'eurostile';
+  src: url('../fonts/eurostile.ttf') format('truetype');
+}
+

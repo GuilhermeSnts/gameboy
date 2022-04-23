@@ -1,6 +1,13 @@
-import { Wrapper } from "./style";
+import {
+  Wrapper,
+  MainArea,
+  DirectionalControls,
+  ActionControls,
+  ConfigControls,
+} from "./style";
 import React, { FunctionComponent } from "react";
 import { BaseComponentProps } from "../../types";
+import PillButton from '../PillButton';
 
 const Controls: FunctionComponent<BaseComponentProps> = ({
   onClick,
@@ -8,7 +15,14 @@ const Controls: FunctionComponent<BaseComponentProps> = ({
 }) => {
   return (
     <Wrapper color={variant}>
-      {/* controls */}
+      <MainArea>
+        <DirectionalControls></DirectionalControls>
+        <ActionControls></ActionControls>
+      </MainArea>
+      <ConfigControls>
+        <PillButton onClick={onClick} variant={variant}>Select</PillButton>
+        <PillButton onClick={onClick} variant={variant}>Start</PillButton>
+      </ConfigControls>
     </Wrapper>
   );
 };
