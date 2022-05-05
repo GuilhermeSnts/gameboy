@@ -121,3 +121,29 @@ export const PowerPill = styled("div", {
     },
   },
 });
+
+export const Switch = styled("div", {
+  width: "20px",
+  height: "4px",
+  position: "absolute",
+  top: "-4px",
+  borderRadius: "2px 2px 0 0",
+  transition: 'all 0.2s ease-in-out',
+  boxShadow: `inset 1px 0 1px rgba(0,0,0,0.2),
+      inset -1px 0 2px rgba(0,0,0,0.4)`,
+  variants: {
+    color: {
+      offWhite: {
+        backgroundColor: "#eeeeee",
+      },
+    },
+    status: {
+      on: {
+        left: "78px",
+      },
+      off: {
+        left: "58px",
+      },
+    },
+  },
+});

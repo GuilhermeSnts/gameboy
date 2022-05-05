@@ -1,13 +1,15 @@
-import { Wrapper, Separator, Container, PowerPill } from "./style";
+import { Wrapper, Separator, Container, PowerPill, Switch } from "./style";
 import React, { FunctionComponent } from "react";
 import { BaseComponentProps } from "../../types";
 
 const PowerOn: FunctionComponent<BaseComponentProps> = ({
   onClick,
   variant,
+  status,
 }) => {
   return (
     <Wrapper color={variant}>
+      <Switch color={variant} status={status} />
       <Container>
         <PowerPill color={variant} onClick={onClick}>
           <svg width="14" height="14" viewBox="0 0 14 14">
