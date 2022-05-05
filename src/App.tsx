@@ -6,29 +6,32 @@ import Sound from "./components/Sound";
 import Screen from "./components/Screen";
 import Controls from "./components/Controls";
 import Logo from "./components/Logo";
-import { Status } from './types';
+import { Status } from "./types";
+import Background from './components/Background';
 
 function App() {
-  const [status, setStatus] = useState<Status>('off');
+  const [status, setStatus] = useState<Status>("off");
 
   const handlePowerSwitch = () => {
-    setStatus(status === 'on' ? 'off' : 'on')
-  }
+    setStatus(status === "on" ? "off" : "on");
+  };
 
   return (
     <div className="App">
-      <Frame variant="offWhite">
-        <PowerOn
-          variant="offWhite"
-          status={status}
-          onClick={handlePowerSwitch}
-        />
-        <Screen variant="offWhite" status={status} />
-        <Logo variant="offWhite" />
-        <Controls variant="offWhite" />
-        <Sound variant="offWhite" />
-        <Phones variant="offWhite" />
-      </Frame>
+      <Background>
+        <Frame variant="offWhite">
+          <PowerOn
+            variant="offWhite"
+            status={status}
+            onClick={handlePowerSwitch}
+          />
+          <Screen variant="offWhite" status={status} />
+          <Logo variant="offWhite" />
+          <Controls variant="offWhite" />
+          <Sound variant="offWhite" />
+          <Phones variant="offWhite" />
+        </Frame>
+      </Background>
     </div>
   );
 }
